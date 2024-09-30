@@ -1,0 +1,170 @@
+.actualites {
+    color: var(--color-black);
+    background-color: #faf9f9;
+    padding: 100px 0;
+
+    .swiper {
+        padding-bottom: 40px;
+    }
+}
+
+.actualite-card-media {
+    overflow: hidden;
+    img {
+        transition: transform 0.5s linear;
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.actualite-card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.actualite-card-content {
+    transition: transform 0.5s ease-out;
+    z-index: 2;
+    padding: 8% 15% 12% 8%;
+    background-color: var(--color-white);
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    max-height: 70px;
+
+    h3 {
+        max-width: 150px;
+    }
+
+    h3,
+    p,
+    .icon-actualite {
+        z-index: 2;
+        margin: 0;
+    }
+
+    .icon-actualite {
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+    }
+
+    .bg-card-actualite {
+        transition: all 0.5s ease-out;
+        z-index: 0;
+        background-color: var(--color-primary);
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 3%;
+    }
+}
+
+.actualite-card:hover .bg-card-actualite {
+    width: 100%;
+}
+
+.actualite-card:hover {
+    a {
+        color: var(--color-white);
+    }
+
+    img {
+        transform: scale(1.2);
+    }
+}
+
+.actualite-top-card {
+    z-index: 2;
+    position: absolute;
+    font-size: #{typo(12px, 18px)};
+    top: 0;
+    left: 0;
+
+    background-color: var(--color-primary);
+    p {
+        margin: 0;
+        font-weight: 700;
+        color: var(--color-white);
+        padding: 0 10px;
+    }
+}
+
+.actualite-grid {
+    display: grid;
+    grid-template-columns: 3fr 8fr;
+}
+
+.lien-vertical {
+    transform: rotate(-90deg);
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    position: absolute;
+
+    @media screen and (max-width: 680px) {
+        width: 200px;
+    }
+
+    @media screen and (max-width: 1100px) {
+        width: 300px;
+    }
+    a {
+        color: var(--color-bleu-dark);
+        text-transform: uppercase;
+        font-size: #{typo(14px, 20px)};
+    }
+
+    .ligne {
+        transition: all 0.3s ease-out;
+        border: solid 0 var(--color-bleu-dark);
+        width: 0;
+    }
+}
+
+.lien-vertical:hover .ligne {
+    border: solid 1px var(--color-bleu-dark);
+    width: 100%;
+}
+
+.cote-gauche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cote-droite {
+    min-width: 100%;
+}
+
+.avis {
+    .actualite-top-card {
+        background-color: var(--color-bleu-light);
+    }
+    .bg-card-actualite {
+        background-color: var(--color-bleu-light);
+    }
+}
+
+.communique {
+    .actualite-top-card {
+        background-color: var(--color-bleu-dark);
+    }
+    .bg-card-actualite {
+        background-color: var(--color-bleu-dark);
+    }
+}
+
+.content-actualites {
+    p {
+        margin-top: 15px;
+        max-width: 600px;
+    }
+}

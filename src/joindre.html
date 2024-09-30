@@ -1,0 +1,172 @@
+{% include "_partials/_header.html" %}
+
+<section class="hero hero-joindre">
+    <div class="hero-media">
+        <img src="assets/images/hero-joindre.jpg" alt="plage" />
+    </div>
+
+    <div class="wrapper">
+        <div class="hero-content">
+            <h1>Nous joindre</h1>
+        </div>
+    </div>
+</section>
+
+<section class="ville">
+    <div class="wrapper">
+        <div class="ville-content">
+            <h2>hotel de ville</h2>
+            <h3>Édifice municipal Albert-Boulianne</h3>
+            <ul>
+                <li>308, rue Leclerc</li>
+                <li>Baie-Sainte-Catherine</li>
+                <li>Québec, G0T 1A0</li>
+            </ul>
+            <h3>Téléphone : 418-620-5020</h3>
+            <p>municipalite@baiestecatherine.com</p>
+            <h3>heure du bureau</h3>
+            <ul>
+                <li>LUNDI - JEUDI = 8h30-12h00 / 13h00-16h30</li>
+                <li>VENDREDI = Fermé</li>
+            </ul>
+        </div>
+
+        <div class="ville-media" data-scrolly="fromBottom">
+            <img src="assets/images/carte.jpg" alt="carte" />
+        </div>
+    </div>
+</section>
+
+<section class="forms">
+    <div class="wrapper">
+        <form action="" class="form" autocomplete="off" data-component="Form">
+            <div class="form-body">
+                <h2>Formulaire de requête citoyenne</h2>
+
+                <fieldset class="form-grid">
+                    <h3 class="gros">Informations personnelles</h3>
+                    <div class="input">
+                        <label class="input-label" for="lastname">nom</label>
+                        <input class="input-element" type="text" name="lastname" id="lastname" placeholder="ex : auger" required />
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input">
+                        <label class="input-label" for="firstname">prénom</label>
+                        <input class="input-element" type="text" name="firstname" id="firstname" placeholder="ex : fred-eric" required />
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input">
+                        <label class="input-label" for="adresse">adresse</label>
+                        <input class="input-element" type="text" name="adresse" id="adresse" placeholder="ex :3452 roland-therrien" required />
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input">
+                        <label class="input-label" for="codepostal">code postal</label>
+                        <input class="input-element" type="text" name="codepostal" id="codepostal" placeholder="ex : J4M 1X7 " required />
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input">
+                        <label class="input-label" for="ville">ville</label>
+                        <input class="input-element" type="text" name="ville" id="ville" placeholder="ex : Longueuil" required />
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input select">
+                        <label class="input-label" for="province">province</label>
+                        <select class="input-element" name="province" id="province" required>
+                            <option value="" hidden></option>
+                            <option value="QC">Québec</option>
+                            <option value="on">Ontario</option>
+                            <option value="al">Alberta</option>
+                            <option value="ma">Manitoba</option>
+                            <option value="sa">Saskatchewan</option>
+                        </select>
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input">
+                        <label class="input-label" for="email">adresse couriel</label>
+                        <input class="input-element" type="email" name="email" id="email" placeholder="ex : fred1942@outlook.fr" required />
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input">
+                        <label class="input-label" for="tel">numéro de téléphone</label>
+                        <input
+                            class="input-element"
+                            type="tel"
+                            name="tel"
+                            id="tel"
+                            placeholder="ex : (555) 666-7777"
+                            pattern="^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s\.\-]?\d{3}[\s\.\-]?\d{4}$"
+                            required
+                        />
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="question">
+                        <h3>Comment préfèrez-vous etre contacter</h3>
+
+                        <div class="flex-radio" data-input-container>
+                            <div class="input radio">
+                                <input class="input-element" type="radio" name="preferance[]" id="preferance1" value="Numero de téléphone" required />
+                                <label class="input-label" for="preferance1">Numéro de téléphone</label>
+                                <p>Ce champ est nécessaire</p>
+                            </div>
+
+                            <div class="input radio">
+                                <input class="input-element" type="radio" name="preferance[]" id="preferance2" value="Adresse courriel" required />
+                                <label class="input-label" for="preferance2">Adresse courriel</label>
+                                <p>Ce champ est nécessaire</p>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-grid">
+                    <h3 class="gros">Requête citoyenne</h3>
+                    <div class="input select">
+                        <label class="input-label" for="subject">sujet</label>
+                        <select class="input-element" name="subject" id="subject" required>
+                            <option value="" hidden></option>
+                            <option value="tr">Travaux</option>
+                            <option value="per">Demande de permis</option>
+                            <option value="prob">Signaler un probleme</option>
+                            <option value="of">Offre d’emploie</option>
+                            <option value="bal">Baleine échoué</option>
+                            <option value="an">Animaux perdu</option>
+                        </select>
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input text-area">
+                        <label class="input-label" for="comment">Commentaire</label>
+                        <textarea class="input-element" name="comment" id="comment" maxlength="500" required></textarea>
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+
+                    <div class="input checkbox">
+                        <input class="input-element" type="checkbox" name="optin[]" id="optin" value="true" required />
+                        <label class="input-label" for="optin">j’accepte les termes et utilisation</label>
+                        <p>Ce champ est nécessaire</p>
+                    </div>
+                </fieldset>
+
+                <footer class="form-footer">
+                    <button class="bouton bouton-form">Soumettre</button>
+                </footer>
+            </div>
+
+            <div class="form-confirmation">
+                <h2>Merci</h2>
+                <p>Votre formulaire a bien été envoyé</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% include "_partials/_footer.html" with {class: 'footer-joindre' } %}

@@ -1,0 +1,143 @@
+.decouvrir {
+    background-color: var(--color-bg-primary);
+    padding: 100px 0;
+
+    .bouton {
+        margin-right: auto;
+    }
+}
+.region {
+    width: 100%;
+    .bouton {
+        display: flex;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            display: none;
+        }
+    }
+}
+
+.decouvrir-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-md) {
+        gap: 50px;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.video {
+    cursor: pointer;
+    max-height: 395px;
+    width: 100%;
+}
+
+.video-media {
+    position: relative;
+
+    height: auto;
+    width: 100%;
+    aspect-ratio: 16/9;
+    img {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        display: block;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            max-height: 395px;
+        }
+    }
+
+    .video-play {
+        transition: all 0.5s linear;
+        z-index: 2;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        color: var(--color-primary);
+
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.region {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    @media screen and (max-width: 1300px) {
+        gap: 30px;
+    }
+}
+
+.carte-interactive {
+    position: relative;
+    cursor: pointer;
+    max-height: 910px;
+    overflow: hidden;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        width: 100%;
+
+        max-height: 500px;
+    }
+}
+
+.carte-interactive-content {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 2;
+}
+
+.carte-interactive-media {
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        transition: all 0.5s ease-out;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            aspect-ratio: 16 / 9;
+        }
+    }
+}
+
+.carte-interactive-content-decouvrir {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    p {
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+.carte-interactive:hover img {
+    transform: scale(1.2);
+}
+
+.cache {
+    display: none;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        display: flex;
+    }
+}

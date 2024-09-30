@@ -1,0 +1,45 @@
+.ville-content {
+    color: var(--color-white);
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+
+.ville {
+    background-color: var(--color-bg-primary);
+    padding: 100px 0;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+        }
+    }
+}
+
+.ville-media {
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+}
+
+.forms {
+    padding: 100px 0;
+    h2 {
+        color: var(--color-black);
+    }
+}

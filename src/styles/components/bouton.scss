@@ -1,0 +1,20 @@
+.bouton {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: var(--color-white);
+        color: var(--color-primary);
+    }
+}
+
+.bouton-form {
+    border: none;
+    &:hover {
+        background-color: var(--color-bleu-light);
+        color: var(--color-white);
+    }
+}

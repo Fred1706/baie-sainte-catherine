@@ -1,0 +1,181 @@
+.header {
+    background-color: var(--color-bg-primary);
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .nav-primary {
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        a {
+            color: var(--color-white);
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            font-size: #{typo(18px)};
+            font-weight: 800;
+
+            &:hover {
+                color: var(--color-bleu-light);
+            }
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size: var(--font-size-h2);
+            }
+        }
+    }
+
+    .logo {
+        z-index: 6;
+    }
+}
+
+.recherche {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 0 217px 2px 18px;
+    border-radius: 25px;
+    fill: var(--color-black);
+
+    @media screen and (max-width: $breakpoint-sm) {
+        display: none;
+    }
+}
+
+.header-toggle {
+    --bar-height: 8px;
+    --bar-width: 50px;
+    --bar-spacer: 6px;
+
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    width: var(--bar-width);
+    height: var(--bar-width);
+    z-index: 10;
+
+    span {
+        background-color: var(--color-white);
+        border-radius: 3px;
+        height: var(--bar-height);
+        width: 100%;
+        position: absolute;
+        top: calc(50% - var(--bar-height) / 2);
+        left: calc(50% - var(--bar-width) / 2);
+        transition: 0.3s all ease-out;
+
+        &:nth-child(1) {
+            top: calc(
+                50% - var(--bar-height) / 2 - var(--bar-height) -
+                    var(--bar-spacer)
+            );
+        }
+
+        &:nth-child(3) {
+            top: calc(
+                50% - var(--bar-height) / 2 + var(--bar-height) +
+                    var(--bar-spacer)
+            );
+        }
+    }
+
+    .nav-is-active & {
+        span {
+            top: calc(50% - var(--bar-height) / 2);
+            &:nth-child(1) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(2) {
+                transform: scaleX(0);
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-md) {
+        display: flex;
+    }
+}
+
+.nav-primary {
+    z-index: 5;
+    background-color: var(--color-bg-primary);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 200px;
+    display: flex;
+    align-items: flex-start;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-out;
+
+    .nav-is-active & {
+        transform: translateX(0);
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        transform: translateX(-70%);
+        transition: transform 1.6s ease-out;
+
+        .nav-is-active & {
+            transform: translateX(0);
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            font-size: var(--font-size-h1);
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+        display: block;
+        background-color: unset;
+        position: relative;
+        height: auto;
+        width: auto;
+        overflow-y: visible;
+        padding-top: 0;
+        transform: translateX(0);
+        z-index: 2;
+
+        ul {
+            flex-direction: row;
+            transform: translateX(0);
+        }
+    }
+}
+
+.nav-is-active body {
+    overflow: auto;
+
+    @media screen and (max-width: $breakpoint-md) {
+        overflow: hidden;
+    }
+}

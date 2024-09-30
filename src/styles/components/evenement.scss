@@ -1,0 +1,109 @@
+.evenement {
+    padding: 100px 0;
+    color: var(--color-black);
+}
+
+.titre-evenement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.card-evenement {
+    position: relative;
+}
+
+.grid-evenement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.card-media-evenement {
+    height: 600px;
+    overflow: hidden;
+
+    @media screen and (max-width: 500px) {
+        max-height: 300px;
+    }
+    img {
+        transition: all 0.5s ease-out;
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        @media screen and (max-width: 500px) {
+            aspect-ratio: 16/9;
+        }
+    }
+}
+
+.evenement-card-content {
+    transition: all 0.5s ease-out;
+    color: var(--color-white);
+    z-index: 2;
+    padding: 25px 50px 40px 25px;
+    background-color: var(--color-bleu-dark);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h3 {
+        max-width: 150px;
+        line-height: 110%;
+    }
+
+    h3,
+    p,
+    .icon-actualite {
+        z-index: 2;
+        margin: 0;
+    }
+
+    .icon-actualite {
+        position: absolute;
+        right: 15px;
+        bottom: 10px;
+    }
+}
+
+.card-evenement:hover .evenement-card-content {
+    background-color: var(--color-white);
+    color: var(--color-bleu-dark);
+}
+
+.card-evenement:hover .card-media-evenement {
+    img {
+        transform: scale(1.2);
+    }
+}
+
+.card-cache {
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
+}
+
+.card-cache-2 {
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
+}

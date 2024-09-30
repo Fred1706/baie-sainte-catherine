@@ -1,0 +1,155 @@
+footer {
+    color: var(--color-black);
+
+    .wrapper {
+        padding-top: 70px;
+        position: relative;
+    }
+}
+
+.fleche-up {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    background-color: var(--color-black);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+        fill: var(--color-white);
+        transform: rotate(-90deg);
+    }
+}
+
+.footer-gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (max-width: 600px) {
+    }
+}
+
+.infolettre {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    h4,
+    p {
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .bouton {
+        margin-right: auto;
+        border-radius: 0;
+    }
+}
+
+.reseaux {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+
+    a {
+        background-color: var(--color-bg-primary);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+
+        &:hover {
+            background-color: var(--color-black);
+        }
+
+        .icon {
+            fill: var(--color-white);
+        }
+    }
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.footer-droite {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+
+    @media screen and (max-width: 600px) {
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+}
+
+.lien-rapide {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    h4 {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    a {
+        color: var(--color-black);
+        font-size: #{typo(15px, 30px)};
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.credit {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 25px;
+
+    @media screen and (max-width: 600px) {
+        text-align: left;
+    }
+}
+
+.footer-joindre {
+    background-color: var(--color-bg-primary);
+    color: var(--color-white);
+
+    .credit {
+        margin: 0;
+        padding-bottom: 25px;
+    }
+
+    a {
+        color: var(--color-white);
+    }
+
+    .reseaux {
+        a {
+            background-color: var(--color-white);
+
+            &:hover {
+                background-color: var(--color-black);
+            }
+
+            .icon {
+                fill: var(--color-bleu-light);
+            }
+        }
+    }
+}

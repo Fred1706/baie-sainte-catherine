@@ -1,0 +1,437 @@
+{% include "_partials/_header.html" %}
+
+<!-- Votre contenu ici -->
+
+<section class="hero">
+    <div class="hero-media swiper" data-autoplay data-loop data-component="Carousel">
+        <div class="swiper-wrapper">
+            <img src="assets/images/hero1.jpg" alt="baleine hors de l'eau" class="swiper-slide" />
+            <img src="assets/images/hero2.jpg" alt="kayak" class="swiper-slide" />
+            <img src="assets/images/hero3.jpg" alt="maison bors de l'eau" class="swiper-slide" />
+            <img src="assets/images/hero4.jpg" alt="mer" class="swiper-slide" />
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="wrapper">
+        <div class="hero-content">
+            <p class="surtitre">Baie-Sainte-Catherine</p>
+            <h1>Capitale de la Zénitude et des baleines</h1>
+        </div>
+
+        <img src="assets/images/meteo.svg" alt="widget meteo" class="meteo" />
+    </div>
+</section>
+
+<section class="actualites">
+    <div class="actualite-grid">
+        <div class="cote-gauche">
+            <div class="lien-vertical">
+                <a href="#">voir toutes les actullités</a>
+                <span class="ligne"></span>
+            </div>
+        </div>
+
+        <div class="cote-droite">
+            <div class="content-actualites">
+                <h2>actualités</h2>
+
+                <p>Toutes l’actualité dont vous avez besoin pour etre au courant de tout dans la region</p>
+            </div>
+
+            <div class="actualites-cards swiper" data-actualite data-component="Carousel" data-scrolly="fromTop">
+                <div class="swiper-wrapper">
+                    <div class="actualite-card swiper-slide">
+                        <div class="actualite-top-card">
+                            <p>info travaux</p>
+                        </div>
+
+                        <a class="actualite-card-content">
+                            <h3>Rénnovation traversier</h3>
+                            <p class="dates">5 mars - 11 avril</p>
+
+                            <svg class="icon icon-actualite">
+                                <use xlink:href="#icon-fleche-carte"></use>
+                            </svg>
+
+                            <div class="bg-card-actualite"></div>
+                        </a>
+
+                        <div class="actualite-card-media">
+                            <img src="assets/images/traversier.jpg" alt="traversier" />
+                        </div>
+                    </div>
+
+                    <div class="actualite-card avis swiper-slide">
+                        <div class="actualite-top-card">
+                            <p>avis public</p>
+                        </div>
+
+                        <a class="actualite-card-content">
+                            <h3>Résultat d’élection</h3>
+                            <p class="dates">22 mars</p>
+
+                            <svg class="icon icon-actualite">
+                                <use xlink:href="#icon-fleche-carte"></use>
+                            </svg>
+
+                            <div class="bg-card-actualite"></div>
+                        </a>
+
+                        <div class="actualite-card-media">
+                            <img src="assets/images/madame.jpg" alt="madame" />
+                        </div>
+                    </div>
+
+                    <div class="actualite-card communique swiper-slide">
+                        <div class="actualite-top-card">
+                            <p>communiqué</p>
+                        </div>
+
+                        <a class="actualite-card-content">
+                            <h3>Projet de création</h3>
+                            <p class="dates">26 mars</p>
+
+                            <svg class="icon icon-actualite">
+                                <use xlink:href="#icon-fleche-carte"></use>
+                            </svg>
+
+                            <div class="bg-card-actualite"></div>
+                        </a>
+
+                        <div class="actualite-card-media">
+                            <img src="assets/images/projet-creation.jpg" alt="plage" />
+                        </div>
+                    </div>
+
+                    <div class="actualite-card swiper-slide">
+                        <div class="actualite-top-card">
+                            <p>info travaux</p>
+                        </div>
+
+                        <a class="actualite-card-content">
+                            <h3>Rénovation de la chapelle</h3>
+                            <p class="dates">26 mars</p>
+
+                            <svg class="icon icon-actualite">
+                                <use xlink:href="#icon-fleche-carte"></use>
+                            </svg>
+
+                            <div class="bg-card-actualite"></div>
+                        </a>
+
+                        <div class="actualite-card-media">
+                            <img src="assets/images/chapelle.jpg" alt="traversier" />
+                        </div>
+                    </div>
+
+                    <div class="actualite-card swiper-slide">
+                        <div class="actualite-top-card">
+                            <p>info travaux</p>
+                        </div>
+
+                        <a class="actualite-card-content">
+                            <h3>Traversier</h3>
+                            <p class="dates">5 mars - 11 avril</p>
+
+                            <svg class="icon icon-actualite">
+                                <use xlink:href="#icon-fleche-carte"></use>
+                            </svg>
+
+                            <div class="bg-card-actualite"></div>
+                        </a>
+
+                        <div class="actualite-card-media">
+                            <img src="assets/images/traversier.jpg" alt="traversier" />
+                        </div>
+                    </div>
+
+                    <div class="actualite-card avis swiper-slide">
+                        <div class="actualite-top-card">
+                            <p>avis public</p>
+                        </div>
+
+                        <a class="actualite-card-content">
+                            <h3>Résultat d’élection</h3>
+                            <p class="dates">22 mars</p>
+
+                            <svg class="icon icon-actualite">
+                                <use xlink:href="#icon-fleche-carte"></use>
+                            </svg>
+
+                            <div class="bg-card-actualite"></div>
+                        </a>
+
+                        <div class="actualite-card-media">
+                            <img src="assets/images/madame.jpg" alt="madame" />
+                        </div>
+                    </div>
+
+                    <div class="actualite-card communiqué swiper-slide">
+                        <div class="actualite-top-card">
+                            <p>communiqué</p>
+                        </div>
+
+                        <a class="actualite-card-content">
+                            <h3>Projet de création</h3>
+                            <p class="dates">26 mars</p>
+
+                            <svg class="icon icon-actualite">
+                                <use xlink:href="#icon-fleche-carte"></use>
+                            </svg>
+
+                            <div class="bg-card-actualite"></div>
+                        </a>
+
+                        <div class="actualite-card-media">
+                            <img src="assets/images/projet-creation.jpg" alt="plage" />
+                        </div>
+                    </div>
+
+                    <div class="actualite-card swiper-slide">
+                        <div class="actualite-top-card">
+                            <p>info travaux</p>
+                        </div>
+
+                        <a class="actualite-card-content">
+                            <h3>Rénovation de la chapelle</h3>
+                            <p class="dates">26 mars</p>
+
+                            <svg class="icon icon-actualite">
+                                <use xlink:href="#icon-fleche-carte"></use>
+                            </svg>
+
+                            <div class="bg-card-actualite"></div>
+                        </a>
+
+                        <div class="actualite-card-media">
+                            <img src="assets/images/chapelle.jpg" alt="traversier" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="decouvrir">
+    <div class="wrapper">
+        <div class="decouvrir-grid">
+            <div class="region" data-scrolly="fromLeft">
+                <div class="titre-region">
+                    <h2>découvrir la région</h2>
+                    <p>C’est le pays des baleines et bélugas! Situé à l’extrémité est de Charlevoix, à l’embouchure du Fjord du Saguenay.</p>
+                </div>
+
+                <div class="video" data-component="Youtube" data-video-id="mv058RTh754">
+                    <div class="video-media js-video">
+                        <img class="js-poster" src="assets/images/video.jpg" alt="route" />
+
+                        <svg class="icon icon--lg video-play">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="video" data-component="Youtube" data-video-id="IiAsW1xt8L4">
+                    <div class="video-media js-video">
+                        <img class="js-poster" src="assets/images/video.jpg" alt="route" />
+                        <svg class="icon icon--lg video-play">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <a href="#" class="bouton">activités touristique</a>
+            </div>
+
+            <div class="carte-interactive" data-scrolly="fromTop">
+                <div class="carte-interactive-content">
+                    <h3>carte interactive</h3>
+
+                    <div class="carte-interactive-content-decouvrir">
+                        <p>découvrir</p>
+
+                        <svg class="icon">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="carte-interactive-media">
+                    <img src="assets/images/carte-interactive.jpg" alt="maisons" />
+                </div>
+            </div>
+
+            <a href="#" class="bouton cache">activités touristique</a>
+        </div>
+    </div>
+</section>
+
+<section class="evenement">
+    <div class="wrapper">
+        <div class="titre-evenement">
+            <h2>évènement</h2>
+
+            <a href="#" class="bouton">voir tous les évenement</a>
+        </div>
+
+        <div class="grid-evenement" data-scrolly="scale">
+            <div class="card-evenement">
+                <a class="evenement-card-content">
+                    <h3>BRICOLAGE LIBRE</h3>
+                    <p class="dates">6 avril</p>
+
+                    <svg class="icon icon-actualite">
+                        <use xlink:href="#icon-fleche-carte"></use>
+                    </svg>
+
+                    <div class="bg-card-actualite"></div>
+                </a>
+
+                <div class="card-media-evenement">
+                    <img src="assets/images/bricolage.jpg" alt="bricolage" />
+                </div>
+            </div>
+
+            <div class="card-evenement">
+                <a class="evenement-card-content">
+                    <h3>PEINTURE CÉRAMIQUE</h3>
+                    <p class="dates">12 avril</p>
+
+                    <svg class="icon icon-actualite">
+                        <use xlink:href="#icon-fleche-carte"></use>
+                    </svg>
+
+                    <div class="bg-card-actualite"></div>
+                </a>
+
+                <div class="card-media-evenement">
+                    <img src="assets/images/peinture.jpg" alt="peinture" />
+                </div>
+            </div>
+
+            <div class="card-evenement card-cache">
+                <a class="evenement-card-content">
+                    <h3>ATLIER DE TRICOT</h3>
+                    <p class="dates">14 avril</p>
+
+                    <svg class="icon icon-actualite">
+                        <use xlink:href="#icon-fleche-carte"></use>
+                    </svg>
+
+                    <div class="bg-card-actualite"></div>
+                </a>
+
+                <div class="card-media-evenement">
+                    <img src="assets/images/tricot.jpg" alt="tricot" />
+                </div>
+            </div>
+
+            <div class="card-evenement card-cache-2">
+                <a class="evenement-card-content">
+                    <h3>DONJONS DRAGONS</h3>
+                    <p class="dates">26 avril</p>
+
+                    <svg class="icon icon-actualite">
+                        <use xlink:href="#icon-fleche-carte"></use>
+                    </svg>
+
+                    <div class="bg-card-actualite"></div>
+                </a>
+
+                <div class="card-media-evenement">
+                    <img src="assets/images/donjon.jpg" alt="donjon et dragon" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="wrapper">
+        <div class="cote-gauche">
+            <div class="lien-vertical">
+                <a href="#">voir toutes les Services</a>
+                <span class="ligne"></span>
+            </div>
+        </div>
+
+        <div class="title-accordeon">
+            <h2>services</h2>
+
+            <div class="accordeons" data-component="Accordion">
+                <div class="accordeon accordion-container js-header" data-auto-open>
+                    <div class="accordion-header">
+                        <svg class="icon">
+                            <use xlink:href="#icon-fleche-drop"></use>
+                        </svg>
+
+                        <h4>Demande de permis</h4>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Si vous envisagez de demander un permis dans notre belle ville, vous êtes au bon endroit. Nous sommes là pour vous guider à chaque
+                            étape du processus pour que votre demande soit fluide et efficace.
+                        </p>
+                        <a href="#">voir plus</a>
+                    </div>
+                </div>
+
+                <div class="accordeon accordion-container js-header">
+                    <div class="accordion-header">
+                        <svg class="icon">
+                            <use xlink:href="#icon-fleche-drop"></use>
+                        </svg>
+
+                        <h4>Info-travaux</h4>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Si vous envisagez de demander un permis dans notre belle ville, vous êtes au bon endroit. Nous sommes là pour vous guider à chaque
+                            étape du processus pour que votre demande soit fluide et efficace.
+                        </p>
+                        <a href="#">voir plus</a>
+                    </div>
+                </div>
+
+                <div class="accordeon accordion-container js-header">
+                    <div class="accordion-header">
+                        <svg class="icon">
+                            <use xlink:href="#icon-fleche-drop"></use>
+                        </svg>
+
+                        <h4>Animaux</h4>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            Si vous envisagez de demander un permis dans notre belle ville, vous êtes au bon endroit. Nous sommes là pour vous guider à chaque
+                            étape du processus pour que votre demande soit fluide et efficace.
+                        </p>
+                        <a href="#">voir plus</a>
+                    </div>
+                </div>
+
+                <div class="accordeon accordion-container js-header">
+                    <div class="accordion-header">
+                        <svg class="icon">
+                            <use xlink:href="#icon-fleche-drop"></use>
+                        </svg>
+
+                        <h4>Les attraits touristiques</h4>
+                    </div>
+                    <div class="accordion-content">
+                        <p>
+                            La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une destination populaire pour les
+                            excursions d'observation des baleines. Elle compte également de nombreux sentiers de randonnée, des plages, des musées et des
+                            festivals tout au long de l'année.
+                        </p>
+                        <a href="#">voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include "_partials/_footer.html" %}
